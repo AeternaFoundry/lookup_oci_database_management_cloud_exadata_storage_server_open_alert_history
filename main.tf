@@ -1,0 +1,6 @@
+data "oci_database_management_cloud_exadata_storage_server_open_alert_history" "database_management_cloud_exadata_storage_server_open_alert_history_lookup" {
+  for_each = var.database_management_cloud_exadata_storage_server_open_alert_history_lookup
+
+  cloud_exadata_storage_server_id = each.value.cloud_exadata_storage_server_id
+}
+
